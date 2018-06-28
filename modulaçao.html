@@ -1,0 +1,28 @@
+<!DOCKTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Olá, mundo!</title>
+	</head>
+	<body>
+		<script>
+			receberDados();
+			//receber dados
+			function receberDados(){
+			num1=+prompt("Digite um número para obter sua tabuada.",1);
+			num=0;
+			imprimirDados();
+			}
+			
+			//imprimir dados
+			function imprimirDados(){
+			document.write("<h1>Tabuada de "+num1+"</h1>");
+			while(num<=10){
+			soma= num+num1;
+			document.write(num1 + " + " +num + " = " + soma+"</br>");
+			num++;
+			}
+		}
+		</script>
+	</body>
+</html>

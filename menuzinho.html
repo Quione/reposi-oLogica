@@ -1,0 +1,90 @@
+<!DOCKTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Olá, mundo!</title>
+	</head>
+	<body>
+		<script>
+		inicio();
+		
+		function inicio(){
+			opcao=+prompt ("Escolha a opção \n 1 - Soma \n 2 - Subtração \n 3 - Divisão \n 4 - Multiplicação");
+			processo();
+			}
+			
+			function pegarDados(){
+				var num=+prompt("Digite um número para obter sua tabuada.",1);
+				return num;
+			}
+			
+			function impimirDados(z){
+			document.write("<h1>Tabuda de"+z+"</h1>");
+			var num=0;
+			while(num<=10){
+				soma=num+z-index
+				document.write(z + " + "+num +" = " + soma+"</br>");
+				num++;
+			}
+		}
+			function processo(){
+			if(opcao==1){
+				x=pegarDados();
+				soma(x);
+			}
+				else if(opcao==2){
+					x=pegarDados();
+					subtracao(x);
+				}
+			else if(opcao==3){
+				x=pegarDados();
+				divisao();
+				}
+			else if(opcao==4){
+				multiplicador();
+				}else{
+				alert("Você não escolheu uma opção válida!");
+				inicio();
+				}
+				
+			}
+			function soma (y){
+				document.write("<h1>Tabuada de"+y+ "</h1>");
+				var num=0;
+				while(num<=10){
+					soma= num+y;
+					document.write(y + " + " +num + " = " + soma+"</br>");
+					num++;
+				}
+			}
+			function subtracao (x){
+				document.write("<h1>Tabuada de"+x+ "</h1>");
+				var num=0;
+				while(num<=10){
+					subtracao= x-num;
+					document.write(x + " - " +num + " = " + subtracao+"</br>");
+					num++;
+				}
+			}
+			function divisao (y){
+				document.write("<h1>Tabuada de"+y+ "</h1>");
+				var num=0;
+				while(num<10*y){
+					num=num*y
+					subtracao= y/num;
+					document.write(num + " / " +num + " = " + subtracao+"</br>");
+					num++;
+				}
+			}
+			function multiplicacao (){
+				alert("Você quer multiplicar");
+			}
+			
+			/*document.write("<h1>Tabuada de"+numm+"</h1>");
+			for(num=0; num<=10;num++){
+			document.write(numm+"+"+num+" = "+(numm+num)+"</br>");
+			}*/
+			
+		</script>
+	</body>
+</html>
